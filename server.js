@@ -1,6 +1,7 @@
 const express = require('express')
 const { json } = require('express/lib/response')
 const app = express()
+app.use(express.static("build"))
 app.use(express.json())
 
 const foods = ["Pudding", "Turkey", "Gravy", "Chicken Pot Pie", "gingersnaps"]
